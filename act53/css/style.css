@@ -6,17 +6,19 @@ h1{
   align-items: center;
 }
 .home{
+    color:white;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   padding: 25px;
-  border-color: #C0C0C0;
-  border-style: solid;
-  border-top-width: 30px;
-  border-bottom-width: 30px;
-  border-left-width: 200px;
-  border-right-width: 200px;
+  background-image: url("https://w.wallha.com/ws/4/yGDEYb1P.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#form{
+    padding: 30px;
+    background: transparent;
 }
 .input {
   display: flex;
@@ -37,6 +39,9 @@ input{
   padding: 5px;
   align-content: center;
 }
+#Birthdate{
+    color:white;
+}
 .region{
   padding: 10px 50px;
   align-content: center;
@@ -47,6 +52,8 @@ input{
   width: 100%;
   border: 1px solid #DDD;
   padding: 10px;
+  background:white;
+  color:black;
 }
 .agree{
   padding: 10px;
@@ -59,14 +66,14 @@ input{
 .btn {
   border: 2px solid black;
   background-color: transparent;
-  color: black;
+  color:white;
   padding: 10px 20px;
   font-size: 15px;
   cursor: pointer;
 }
 .reset{
   border-color: #FFFFFF;
-  color: black;
+  color:white;
 }
 .reset:hover {
   background-color: #000000;
@@ -74,19 +81,42 @@ input{
 }
 .register{
   border-color: #FFFFFF;
-  color: black;
+  color: white;
 }
 .register:hover {
   background: #000000;
   color: white;
 }
 .footer{
-  background-color: black;
   text-align: center;
-  color: white;
+  justify-content: center;
 }
-.error{
-  font-size: 13px;
-  display:none;
-  color: red;
+.inputText{
+    color:white;
+}
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"]{
+    width: 100%;
+}
+input:focus{
+    background: transparent;
+    outline: none;
+}
+input:hover{
+    border-bottom: 1px solid gray;
+    background:transparent;
+}
+input:valid {
+    border-bottom: 1px solid greenyellow;
+    background:transparent;
+}
+input:focus:invalid {
+    border-bottom: 1px solid red;
+    background:transparent;
+}
+input:invalid{
+    border-bottom: 1px solid white;
+    background:transparent;
 }
