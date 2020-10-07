@@ -11,14 +11,17 @@ h1{
   flex-direction: column;
   align-items: center;
   height: 100%;
-  padding: 25px;
+  padding: 100px;
   background-image: url("https://w.wallha.com/ws/4/yGDEYb1P.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 #form{
-    padding: 30px;
-    background: transparent;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 30px;
+    background: black;
+    opacity: 0.9;
 }
 .input {
   display: flex;
@@ -52,8 +55,8 @@ input{
   width: 100%;
   border: 1px solid #DDD;
   padding: 10px;
-  background:white;
-  color:black;
+  background:transparent;
+  color:white;
 }
 .agree{
   padding: 10px;
@@ -76,20 +79,23 @@ input{
   color:white;
 }
 .reset:hover {
-  background-color: #000000;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .register{
   border-color: #FFFFFF;
   color: white;
 }
 .register:hover {
-  background: #000000;
-  color: white;
+  background:white;
+  color: black;
 }
 .footer{
   text-align: center;
   justify-content: center;
+  font-size:10px;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 .inputText{
     color:white;
@@ -119,4 +125,14 @@ input:focus:invalid {
 input:invalid{
     border-bottom: 1px solid white;
     background:transparent;
+}
+select{
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+}
+option{
+  background: black;
+  color: white;
 }
