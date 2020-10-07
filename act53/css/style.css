@@ -1,87 +1,92 @@
 *{
-                font-family:'Verdana';    
-            }
-      h1{
-        display: flex;
-        align-items: center;
-      }
-      .home{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        padding: 25px;
-        border-color: #C0C0C0;
-        border-style: solid;
-        border-top-width: 30px;
-        border-bottom-width: 30px;
-        border-left-width: 200px;
-        border-right-width: 200px;
-      }
-      .input {
-            display: flex;
-            flex-direction: column;
-            }
-      input{
-            padding: 10px;
-            margin-bottom: 5px;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #D3D3D3;
-            }
-      .sex{
-                padding: 5px;
-                align-content: center;
-            }
-      .birthdate{
-                padding: 5px;
-                align-content: center;
-            }
-      .region{
-        padding: 10px 50px;
-        align-content: center;
-            }
-      .terms {
-        overflow-y: scroll;
-        height: 100px;
-        width: 100%;
-        border: 1px solid #DDD;
-        padding: 10px;
-      }
-      .agree{
-        padding: 10px;
-        align-content: center;
-            }
-      .buttons{
-        padding: 0px 100px;
-        align-content: center;
-            }
-      .btn {
-        border: 2px solid black;
-        background-color: transparent;
-        color: black;
-        padding: 10px 20px;
-        font-size: 15px;
-        cursor: pointer;
-      }
-      .reset{
-        border-color: #FFFFFF;
-        color: black;
-      }
-      .reset:hover {
-        background-color: #000000;
-        color: white;
-      }
-      .register{
-        border-color: #FFFFFF;
-        color: black;
-      }
-      .register:hover {
-        background: #000000;
-        color: white;
-      }
-      .footer{
-        background-color: black;
-        text-align: center;
-        color: white;
-      }
+  font-family:'Verdana';
+}
+h1{
+  display: flex;
+  align-items: center;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 25px;
+  border-color: #C0C0C0;
+  border-style: solid;
+  border-top-width: 30px;
+  border-bottom-width: 30px;
+  border-left-width: 200px;
+  border-right-width: 200px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 10px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D3D3D3;
+}
+.sex{
+  padding: 5px;
+  align-content: center;
+}
+.birthdate{
+  padding: 5px;
+  align-content: center;
+}
+.region{
+  padding: 10px 50px;
+  align-content: center;
+}
+.terms {
+  overflow-y: scroll;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #DDD;
+  padding: 10px;
+}
+.agree{
+  padding: 10px;
+  align-content: center;
+}
+.buttons{
+  padding: 0px 100px;
+  align-content: center;
+}
+.btn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.reset{
+  border-color: #FFFFFF;
+  color: black;
+}
+.reset:hover {
+  background-color: #000000;
+  color: white;
+}
+.register{
+  border-color: #FFFFFF;
+  color: black;
+}
+.register:hover {
+  background: #000000;
+  color: white;
+}
+.footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.error{
+  font-size: 13px;
+  display:none;
+  color: red;
+}
