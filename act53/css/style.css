@@ -45,6 +45,9 @@ input{
 #Birthdate{
     color:white;
 }
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
 .region{
   padding: 10px 50px;
   align-content: center;
