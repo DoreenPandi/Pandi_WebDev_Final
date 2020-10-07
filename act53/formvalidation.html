@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF 8">
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=">
+    <title>Game1</title>
+  </head>
+  <body>
+    <div class="home">
+      <form action="">
+        <h1 align="center"><strong>Create an Account</strong></h1>
+        
+        <div class="input">
+          <label for="Name"><strong>Name:</strong></label>
+          <input type="text" 
+                   id="txtName" 
+                   name="txtName"
+                   placeholder="Enter full Name"/>
+          <label for="Username"><strong>Username:</strong></label>
+          <input type="text" 
+                   id="txtUsername" 
+                   name="txtUsername"
+                   placeholder="Enter Username"/>
+          <label for="Email Address"><strong>Email Address:</strong></label>
+          <input type="email" 
+                 name="txtEmail" 
+                 placeholder="Enter Email Address">
+          <label for="Password"><strong>Password:</strong></label>
+          <input type="password" 
+                 name="txtPassword" 
+                 placeholder="Enter Password">
+                </div>
+        
+        <div class="sex">
+          <label for="Sex"><strong>Sex:</strong></label>
+          <input type="radio" 
+                 name="radioSex" 
+                 value="Male"/>
+          <label for="Sex">Male</label>
+          <input type="radio" 
+                 name="radioSex" 
+                 value="Female"/>
+          <label for="Sex">Female</label>
+        </div>
+        
+        <div class="birthdate">
+          <label for="Birthdate"><strong>Birth Date:</strong></label>
+                    <input type="date" 
+                           name="inputBirthdate">
+                           </div>
+          
+        <div class="region">
+          <select>
+            <option value="" disabled selected>Please select your Region of Residence</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Myanmar">Myanmar</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Vietnam">Vietnam</option>
+            </select>
+            </div>
+        
+        <div class="terms">
+            <p align="center"><strong>Terms and Conditions.</strong> </p>
+            <p>Lorem Ipsum...</p>
+          </div>
+        
+        <div class="agree">
+          <input type="checkbox"
+                 id="cbxAgree"
+                 name="cbxAgree"
+                 value="I agree and am 13 years of age or older"/>
+          <label for="cbxPolicy1"><strong>I agree and am 13 years of age or older</strong></label>
+        </div>
+         
+        <div class="buttons">
+        <button id="btnReset" class="btn reset" onClick="window.location.reload();">Reset</button>
+        <button id="btnRegister" class="btn register"onclick="myFunction()">Register</button>
+        <script>
+          function myFunction() {
+            alert("You are now Registered!");
+          }
+        </script>
+        </div>
+        </div>
+      
+      <div class="footer">
+        <footer>
+          <p>This registration form is like a common registration form we always see when visiting a new website or signing up a new account, this registration form is used for a video game account, that explains why there is region of residence and terms and conditions.<br>
+          </footer>
+      </div>
+  
+          </form>
+        </div>
+    </body>
+</html>
