@@ -4,11 +4,12 @@
     <meta charset="UTF 8">
     <meta name="viewport" 
           content="width=device-width,initial-scale=">
+    
     <title>Game1</title>
   </head>
   <body>
     <div class="home">
-      <form action="">
+      <form id="form" onsubmit="return formValidation()">
         <h1 align="center"><strong>Create an Account</strong></h1>
         
         <div class="input">
@@ -17,11 +18,13 @@
                    id="txtName" 
                    name="txtName"
                    placeholder="Enter full Name"/>
+          <span class="error" id="nameError">Name is Empty</span>
           <label for="Username"><strong>Username:</strong></label>
           <input type="text" 
                    id="txtUsername" 
                    name="txtUsername"
                    placeholder="Enter Username"/>
+          <span class="error" id="usernameError">Username is Empty</span>
           <label for="Email Address"><strong>Email Address:</strong></label>
           <input type="email" 
                  name="txtEmail" 
@@ -35,15 +38,17 @@
         <div class="sex">
           <label for="Sex"><strong>Sex:</strong></label>
           <input type="radio" 
+                 id="Male"
                  name="radioSex" 
                  value="Male"/>
           <label for="Sex">Male</label>
           <input type="radio" 
+                 id="Female"
                  name="radioSex" 
                  value="Female"/>
           <label for="Sex">Female</label>
         </div>
-        
+        <span class="error" id="sexError">Please Select Gender</span>
         <div class="birthdate">
           <label for="Birthdate"><strong>Birth Date:</strong></label>
                     <input type="date" 
@@ -75,16 +80,12 @@
                  name="cbxAgree"
                  value="I agree and am 13 years of age or older"/>
           <label for="cbxPolicy1"><strong>I agree and am 13 years of age or older</strong></label>
+          <span class="error" id="checkboxError">Read and accept terms and conditions</span>
         </div>
          
         <div class="buttons">
         <button id="btnReset" class="btn reset" onClick="window.location.reload();">Reset</button>
         <button id="btnRegister" class="btn register"onclick="myFunction()">Register</button>
-        <script>
-          function myFunction() {
-            alert("You are now Registered!");
-          }
-        </script>
         </div>
         </div>
       
