@@ -1,35 +1,28 @@
-var Name = document.forms["form"]["txtName"];
-var Username = document.forms["form"]["txtUserName"];
+function Submit(){
+    var name = document.getElementById("txtName").value;
+    var username = document.getElementById("txtUsername").value;
+    var password = document.getElementById("passWord").value;
+    var email = document.getElementById("emailAdd").value;
+    var birthdate = document.getElementById("Birthdate").value;
+    var male = document.getElementById("Male").value;
+    var female = document.getElementById("Female").value;
 
-var NameInput = document.getElementById("txtName")
-var UsernameInput = document.getElementById("txtUsername")
-var Male = document.getElementById("Male")
-var Female = document.getElementById("Female")
-var Checkbox = document.getElementById("cbxAgree")
-
-var NameError = document.getElementById("nameError");
-var UsernameError = document.getElementById("usernameError");
-var SexError = document.getElementById("sexError")
-var CheckboxError = document.getElementById("checkboxError")
-
-function validateForm(){
-  if (Name.value=="") {
-    NameError.style.display="block";
-    NameInput.classList.add("invalid")
-    return false;
+  
+  
+  if(document.getElementById('cbxAgree').checked == true)
+  {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(form.emailAdd.value))
+    {
+      if(name=="" | username=="" | password=="" | email=="" | birthdate == document.getElementById("Birthdate").defaultValue | male.checked == document.getElementById("Male").defaultValue && male.checked==document.getElementById("Female").defaultValue){
+          alert('Please Enter missing parts');
+        }
+        else{
+            alert('You are now registered for Game1');
+        }
+    }
+    else{
+      alert("Invalid Email Address!");
+    } 
   }
-  if (Username.value=="") {
-    UsernameError.style.display="block";
-    UsernameInput.classList.add("invalid")
-    return false;
-  }
-  if (Male.checked==false && Female.checked==false) {
-    SexError.style.display="block"
-    return false;
-  }
-  if(Checkbox.checked==false){
-    CheckboxError.style.display="block"
-    return false;
-  }
-  alert('Success')
+  else{ alert('Please enter missing parts'); event.preventDefault(); }
 }
