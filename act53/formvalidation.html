@@ -10,53 +10,61 @@
   <body>
     <div class="home">
       <form id="form" onsubmit="return validateForm()">
-        <h1 align="center"><strong>Create an Account</strong></h1>
+        <h1><strong>Create an Account</strong></h1>
         
         <div class="input">
           <label for="Name"><strong>Name:</strong></label>
           <input type="text" 
-                   id="txtName" 
-                   name="txtName"
+                   id="txtName"
+                   name="NName"
+                   class="inputText"
+                   minlength="3"required
                    placeholder="Enter full Name"/>
-          <span class="error" id="nameError">Name is Empty</span>
+
           <label for="Username"><strong>Username:</strong></label>
           <input type="text" 
-                   id="txtUsername" 
-                   name="txtUsername"
+                   id="txtUsername"
+                   name="UName"
+                   class="inputText"
+                   minlength="3"required
                    placeholder="Enter Username"/>
-          <span class="error" id="usernameError">Username is Empty</span>
+          
           <label for="Email Address"><strong>Email Address:</strong></label>
-          <input type="email" 
-                 name="txtEmail" 
+          <input type="email"
+                id="emailAdd"
+                class="inputText"
+                required
                  placeholder="Enter Email Address">
-          <label for="Password"><strong>Password:</strong></label>
-          <input type="password" 
-                 name="txtPassword" 
-                 placeholder="Enter Password">
+          
+                 <label for="Password"><strong>Password:</strong></label>
+          <input type="password"
+                 placeholder="Enter Password"
+                 id="passWord"
+                 class="inputText"
+                 minlength = "8"
+                 maxlength = "20"
+                 required>
                 </div>
         
         <div class="sex">
           <label for="Sex"><strong>Sex:</strong></label>
           <input type="radio" 
                  id="Male"
-                 name="radioSex" 
                  value="Male"/>
           <label for="Sex">Male</label>
           <input type="radio" 
                  id="Female"
-                 name="radioSex" 
                  value="Female"/>
           <label for="Sex">Female</label>
         </div>
-        <span class="error" id="sexError">Please Select Gender</span>
+        
         <div class="birthdate">
           <label for="Birthdate"><strong>Birth Date:</strong></label>
-                    <input type="date" 
-                           name="inputBirthdate">
-                           </div>
+                    <input type="date" id="Birthdate" name="BDate" required>
+        </div>
           
         <div class="region">
-          <select>
+          <select id="Select" required>
             <option value="" disabled selected>Please select your Region of Residence</option>
             <option value="Cambodia">Cambodia</option>
             <option value="Indonesia">Indonesia</option>
@@ -77,15 +85,13 @@
         <div class="agree">
           <input type="checkbox"
                  id="cbxAgree"
-                 name="cbxAgree"
                  value="I agree and am 13 years of age or older"/>
           <label for="cbxPolicy1"><strong>I agree and am 13 years of age or older</strong></label>
-          <span class="error" id="checkboxError">Read and accept terms and conditions</span>
         </div>
          
         <div class="buttons">
         <button id="btnReset" class="btn reset" onClick="window.location.reload();">Reset</button>
-        <button id="btnRegister" class="btn register" type="submit">Register</button>
+        <button id="btnRegister" class="btn register" onClick="Submit()">Register</button>
         </div>
         </div>
       
