@@ -1,0 +1,94 @@
+body{
+    margin:0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: 'Arial';
+    margin-top: 0px;
+    color:whitesmoke;
+    font-size: 20px;
+    background: #141414;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    margin-left: -120px;
+}
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    background-size: 100% 2px;
+  }
+  #cbname{
+    text-decoration: none;
+    background-image: none;
+    background-position: none;
+    background-repeat: no-repeat;
+    background-size: none;
+    transition: none;
+  }
+  #logout{
+    font-size: 15px;
+    margin-left: 800px;
+    text-decoration: none;
+    background-image: none;
+    background-position: none;
+    background-repeat: no-repeat;
+    background-size: none;
+    transition: none;
+  }
+.home{
+  opacity: 0.97;
+  margin-top: 75px;
+}
+.home2{
+    width: 900px;
+    margin-right: 0px;
+    margin-left: 125px;
+}
+.card{
+  margin-bottom: 10px;
+  width: 850px;
+}
+.card-body ul{
+  padding-inline-start: 0px;
+}
+.home3{
+  background: white;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 25px;
+  height: 750px;
+}
+.checked {
+  color: orange;
+}
+#comment{
+  margin-top: -30px;
+  margin-left: 60px;
+}
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 black;
+}
+input.form-control{
+  outline: none;
+  width:325px;
+}
+hr.line1{
+  width: 325px;
+  border-top: 2px solid black;
+}

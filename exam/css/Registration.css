@@ -1,0 +1,82 @@
+body{
+    margin:0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: 'Arial';
+    color:whitesmoke;
+    font-size: 20px;
+    background: #141414;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    margin-left: 33%;
+}
+.loginform {
+    color: white;
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.loginform form {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    background: black;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    opacity: 0.9;
+}
+.loginform h2 { 
+    text-align: center;
+    margin: 0 0 15px;
+}
+#inputform{
+    min-height: 38px;
+    border-radius: 2px;
+    width: 129px;
+    margin-bottom: 5px;
+    margin: 0px;
+}
+#inputform2{
+    min-height: 38px;
+    border-radius: 2px;
+    width: 275px;
+    margin-bottom: 10px;
+}
+
+.groupform{
+    min-height: 38px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+ul{
+    padding-inline-start: 0px;
+    margin-bottom: 0px;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+}
+.btnLogin {
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 38px;
+    border-radius: 2px;
+    width: 275px;
+}
+.textcenter{
+    text-align: center;
+}
+.textcenter a{
+    color: whitesmoke;
+    text-decoration: white;
+}
+.textcenter a:hover{
+    color: whitesmoke;
+    text-decoration: white;
+    border-bottom: 1px white solid;
+}
